@@ -139,7 +139,7 @@ Player.prototype.getLevel = function() {
 };
 
 //Creating the Character
-player = new Player(200, 400, 25);
+player = new Player(200, 400, 50);
 
 //Create new enemy with individual min and max Speed, depending on the level
 function generateEnemy(level) {
@@ -164,3 +164,8 @@ document.addEventListener("keyup", function(e) {
     player.handleInput(allowedKeys[e.keyCode]);
 
 });
+
+
+function myFunction(key) {
+    player.handleInput(key);
+}
