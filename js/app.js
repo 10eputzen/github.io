@@ -105,7 +105,7 @@ Player.prototype.resetGame = function(win) {
     if (win) {
         this.level++;
         this.points++;
-		if(this.points == 2)
+		if(this.points == 10)
 			alert("Hurra, du hast schon 10 Mal getrunken. Jetzt musst du ja bald gesund sein");
         this.win = true;
     } else {
