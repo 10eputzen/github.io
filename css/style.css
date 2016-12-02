@@ -7,3 +7,7 @@ body {
 	height: 30px;
 	width: 30px;
 }
+
+p {
+	font-size: 1.5em;
+}
