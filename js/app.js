@@ -167,5 +167,31 @@ document.addEventListener("keyup", function(e) {
 
 
 function myFunction(key) {
-    player.handleInput(key);
+    player.sonstwas(key);
 }
+
+
+Player.prototype.sonstwas = function(keyPress) {
+    switch (keyPress) {
+        case "left":
+            if (this.x > this.minX)
+                this.x = this.x - this.speed;
+            break;
+        case "up":
+            if (this.y > this.minY)
+                this.y = this.y - this.speed;
+            else {
+                //Player reached the Water and beat the level
+                this.resetGame(true);
+            }
+            break;
+        case "right":
+            if (this.x < this.maxX)
+                this.x = this.x + this.speed;
+            break;
+        case "down":
+            if (this.y < this.maxY)
+                this.y = this.y + this.speed;
+            break;
+    }
+};
