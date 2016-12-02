@@ -34,7 +34,7 @@ Enemy.prototype.update = function(dt) {
 
 //Checking if the enemy collides with the player
 Enemy.prototype.checkForCollission = function() {
-    if ((Math.abs(this.x - player.x) < 75) && (Math.abs(this.y - player.y) < 50))
+    if ((Math.abs(this.x - player.x) < 75) && (Math.abs(this.y - player.y) < 60))
         return true;
     else
         return false;
@@ -105,6 +105,8 @@ Player.prototype.resetGame = function(win) {
     if (win) {
         this.level++;
         this.points++;
+		if(this.points == 2)
+			alert("Hurra, du hast schon 10 Mal getrunken. Jetzt musst du ja bald gesund sein");
         this.win = true;
     } else {
         this.win = false;
