@@ -2,6 +2,7 @@ body {
     text-align: center;
     width: 960px;
     height: 600px;
+    overflow: hidden;
 }
 
 .button-x {
