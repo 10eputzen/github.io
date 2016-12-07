@@ -1,0 +1,33 @@
+html, body {
+   height: 100%;
+
+}
+
+body {
+	font-size: 2em;
+	color: black;
+}
+
+#map {
+    height: 100%;
+    // margin: 15px;
+}
+
+
+
+.location-headline {
+	font-size: 1.6em;
+	padding: 10px;
+}
+
+.object-list{
+	padding: 0 10px 10px 10px;
+}
+
+.object-list-item {
+	padding-top: 10px;
+}
+
+.object-list-item a {
+	color: black;
+}
