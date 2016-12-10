@@ -34,8 +34,6 @@ var berlin = new dropDownLocation("Berlin", 52.5200070, 13.4049540);
 function AppViewModel() {
     var originalMarkers = markers.slice();
 
-    reArrangeObjects(markers);
-
     function reArrangeObjects(res) {
         self.list.Objects.removeAll();
 
@@ -52,6 +50,14 @@ function AppViewModel() {
     };
 
     self.currentFilter = ko.observable("");
+
+    self.worker = ko.computed(function() {
+        if (self.currentFilter())
+            self.filterMarkers();
+        else
+            reArrangeObjects(markers);
+    }, this);
+
 
     self.filterMarkers = function() {
         var filteredMarkers = markers.slice();
@@ -103,6 +109,7 @@ var markers = [];
 
 self.currentLocation = hofheim;
 var homeMarkers = [];
+var homeIcon = 'https://maps.google.com/mapfiles/ms/icons/green-dot.png';
 var firstInit = true;
 
 function initMap() {
@@ -159,7 +166,7 @@ function initMap() {
                 map: map,
                 title: place.name,
                 position: place.geometry.location,
-                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                icon: homeIcon,
                 content: 'Home',
             }));
 
@@ -184,7 +191,7 @@ function initMap() {
             homeMarker = new google.maps.Marker({
                 map: map,
                 position: home,
-                icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png',
+                icon: homeIcon,
                 content: 'Home',
             });
             homeMarkers.push(homeMarker);

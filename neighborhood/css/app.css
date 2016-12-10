@@ -23,12 +23,9 @@ body {
 }
 
 .object-list {
-    padding: 0 10px;
+    padding: 0 10px 20px 10px;
 }
 
-.object-list-item {
-    // padding-top: 10px;
-}
 
 .object-list-item a {
     color: black;
@@ -60,9 +57,6 @@ hr {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
 }
 
-.filter-form {
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
 
 #pac-input {
     background-color: #fff;
