@@ -1,2 +1,0 @@
-# Udacity Neighborhood Map
-
