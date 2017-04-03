@@ -1,0 +1,20 @@
+<div class="container">
+    <toaster-container></toaster-container>
+    <div class="row" id="headerRow">
+        <div class="col-sm-12">
+            <h1>Subscribe</h1>
+        </div>
+    </div>
+    <form name="myform" id="inputForm">
+        <div class="row input-row">
+            <div class="col-sm-10">
+                <input type="email" name="Reason" placeholder="Enter you Email Address to receive Franknado Alerts" class="inputBox" ng-model="subscribe.email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-offset-4">
+                <button type="submit" class="btn btn-success" ng-click="subscribe.saveToDatabase()" id="submitButton">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

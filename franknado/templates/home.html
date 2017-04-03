@@ -1,0 +1,59 @@
+<div class="container">
+    <toaster-container></toaster-container>
+    <div class="row" id="headerRow">
+        <div class="col-sm-12">
+            <h1>Current Franknado Level</h1>
+        </div>
+    </div>
+    <label>{{main.moodText}}</label>
+    <div class="col-sm-10 progress">
+        <!--       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+            40% 
+        </div> -->
+        <uib-progressbar class="progress-striped active" value="main.dynamic" type="{{main.type}}"><i ng-show="main.showWarning"></i></uib-progressbar>
+    </div>
+    <div class="row">
+        <div class="col-sm-10">
+            <label>Reason: {{main.MaxMood.reason}}</label>
+        </div>
+    </div>
+    <hr>
+    <form name="myform" id="inputForm">
+        <div class="row">
+            <div class="col-sm-10">
+                <label>Set the current Franknado Level. </label>
+                <p class="text-description">F0 (Ois izi) to F5 (Run Fool!)</p>
+                <rzslider rz-slider-model="formRating" rz-slider-options="{floor: 0, ceil: 5}"></rzslider>
+            </div>
+        </div>
+        <div class="row input-row">
+            <div class="col-sm-10">
+                <input type="text" name="Reason" placeholder="Enter a reason for changing the Franknado Level" class="inputBox" ng-model="main.newReason">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 input-row">
+                <select data-ng-options="type.text for type in main.allTypes" class="selectBox" ng-model="main.selectedType" placeholder="test">
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-10 input-row">
+                <div class="checkbox checkbox-success">
+                    <input type="checkbox" id="checkbox1" ng-model="main.mailCheckbox">
+                    <label for="checkbox1">
+                        Send E-Mail Notification
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2 col-md-offset-4">
+                <button type="submit" class="btn btn-success" ng-click="main.saveToDatabase()" id="submitButton">Save</button>
+            </div>
+        </div>
+    </form>
+    <div class="background-element">
+        <img src="img/tornado_edit.png" />
+    </div>
+</div>
