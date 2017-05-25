@@ -1,5 +1,4 @@
 <?php
-	require_once "recaptchalib.php";
     $to = "stefan.landvogt@pentlandfirth.com"; 
     $from = $_REQUEST['email']; 
     $name = $_REQUEST['name']; 
