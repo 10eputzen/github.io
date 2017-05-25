@@ -340,7 +340,7 @@
 	</p> -->
 	<div class="row">
 		<div class="col-sm-6">
-	<img src="img/ecenter.jpg" class="img-responsive pxauto wow bounceIn animatedUp app-image" data-wow-delay="0.2s">
+	<img src="img/ecenter.jpg" class="img-responsive pxauto wow bounceIn animatedUp" data-wow-delay="0.2s">
 		</div>
 		<div class="col-sm-6 ">
 	<div class="map-responsive wow bounceIn animated" data-wow-delay="0.1s">
@@ -356,62 +356,6 @@
 	</div> -->
 </div>
 </section> 
-
-
-<!-- Presse (TESTIMONIALS)
-================================================== -->
-<!-- <section class="testimonial graybg" id="presse">
-<div class="container">
-	<div class="starter-template">
-		<h1>Presse</h1>
-		<div class="smallsep">
-		</div>
-		<p class="lead">
-			 Was andere über uns schreiben
-		</p>
-	</div>
-	<div class="row">
-		<div class="c12">
-			<ul class="slides">
-				<li>
-				<div class="slide-text wow rollIn animated" data-wow-delay="0.1s" data-wow-duration="1s">
-					
-						<h2><span class="uppercase">FAZ</span></h2>
-						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar2.png" alt="">
-						<p>
-							 The support... I can only say it's awesome. You make a product and you help people out any way you can even if it means that you have to log in on their dashboard to sort out any problems that customer might have. Simply Outstanding!
-						</p>
-					
-				</div>
-				</li>
-				<li>
-				<div class="slide-text">
-					
-						<h2><span class="uppercase">TAZ</span></h2>
-						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar4.png" alt="">
-						<p>
-							 Great themes with equally amazing customer service to go with it. Very prompt responses and very knowledgable staff that truly cares about their customer. I stand 100% behind this website and will make sure to recommend it to my friends.
-						</p>
-					
-				</div>
-				</li>
-				<li>
-				<div class="slide-text">
-					
-						<h2><span class="uppercase">MT</span></h2>
-						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar5.png" alt="">
-						<p>
-							 This is a great theme for Wordpress. Great features, catchy look. Also, I have on a few occasions needed to contact the support team, and they have been extremely helpful. I'm new to navigating these things so this has been invaluable!
-						</p>
-					
-				</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</div>
-</section>
- -->
 
 <!-- CONTACT
 ================================================== -->
@@ -472,7 +416,7 @@
 
 <!-- FOOTER
 ================================================== -->
-<section id="footer" class="footer">
+<footer class="footer">
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 text-center">
@@ -489,7 +433,7 @@
 		</div>
 	</div>
 </div>
-</section>
+</footer>
 
 
 
@@ -505,6 +449,8 @@
 <script src="js/validate.js"></script>
 <script src="js/common.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+<!-- <script src="https://npmcdn.com/headroom.js@0.9.3/dist/headroom.min.js"></script> -->
+<script src='https://cdn.jsdelivr.net/g/headroomjs@0.7.0(headroom.min.js+jQuery.headroom.min.js)'></script>
 <!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
 
 <script type="text/javascript">
@@ -512,6 +458,8 @@
     event.preventDefault();
     $(this).ekkoLightbox();
 });
+    $(".navbar-fixed-top").headroom();
+
 </script>
 </body>
 </html>

@@ -12,6 +12,10 @@ a {
     font-weight: bold;
 }
 
+.ekko-lightbox-nav-overlay a {
+    color: #444;
+}
+
 .navbar-default .navbar-nav>li>a {
     color: #444;
 }
@@ -148,6 +152,21 @@ ul.nav {
         padding: 15px;
     }
 
+    /* Hide Navbar on Mobile*/
+    .headroom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all .2s ease-in-out;
+  }
+  .headroom--unpinned {
+    top: -100px;
+  }
+  .headroom--pinned {
+    top: 0;
+  }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -159,3 +178,4 @@ ul.nav {
     }
  
 }
+
