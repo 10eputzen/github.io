@@ -1,32 +1,517 @@
 <!DOCTYPE html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="expires" content="-1" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <title>10eputzen Github</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="shortcut icon" href="img/favicon.ico">
+<title>EASY Shopper - So einfach geht Einkaufen!</title>
+<!-- Bootstrap core CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<!-- Font Awesome CSS -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.css" rel="stylesheet">
+
+<!-- Animate CSS -->
+<link href="css/animate.css" rel="stylesheet">
+<!-- Custom styles for this template -->
+<link href="css/style.css" rel="stylesheet">
+<link href="css/edit.css" rel="stylesheet">
+<!-- Skin color for this template -->
+<link href="css/skin-green.css" rel="stylesheet">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<!-- <li class="page-scroll"><a href="#home-slider" class="navbar-brand">EASY Shopper</a></li> -->
+			<li class="page-scroll"><a href="#home-slider"> 
+			<img src="img/EasyShopper_Logo_Schwarz_20122016_100.png" class="shopper-logo">
+    <!-- 		<img src="img/EasyShopper_Logo_20122016.png"  class="shopper-logo-mobile"> -->
+			</a></li>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+				<!-- <li class="page-scroll"><a href="#home-slider">Home</a></li> -->
+				<!-- <li class="page-scroll"><a href="#about">About</a></li> -->
+				<li class="page-scroll"><a href="#vorteile">Vorteile</a></li>
+				<li class="page-scroll"><a href="#faq">FAQ</a></li>
+				<li class="page-scroll"><a href="#app">Download</a></li>
+				<li class="page-scroll"><a href="#testen">Testen</a></li>
+				<!-- <li class="page-scroll"><a href="#presse">Presse</a></li> -->
+				<li class="page-scroll"><a href="#contact-page">Kontakt</a></li>
+			</ul>
+		</div>
+		<!--/.nav-collapse -->
+	</div>
+</div>
 
-<body>
-    <div>
-        <ul>
-            <li>
-                <a href="loni/index.html"> Loni</a>
-            </li>            
-            <li>
-                <a href="neighborhood/index.html"> Neighborhood Map</a>
-            </li>
-			<li>
-                <!-- <a href="franknado/index.html">Franknado</a> -->
-                <a href="easyshopper/index.html">Franknado</a>
-            </li>
-        </ul>
+<!-- INTRO - HOMEPAGE
+================================================== -->
+<section id="home-slider" class="flexslider fullbg" style="background-image:url(img/ecenter_front_smaller.jpg); height:500px;padding:0px;">
+<ul class="slides">
+	<li class="home-slide">
+	<div class="flex-caption transparent light-font center text-animation">
+		<p class="home-slide-content bounceInLeft animated" data-wow-delay="0.5s" data-wow-duration="8s">
+			 Herzlich Willkommen bei </br><span class="highlight">EASY Shopper </span> 
+		</p>
+		<p class="home-slide-content bounceIn animated" data-wow-delay="2s" data-wow-duration="8s">
+			 Die  <span class="highlight">Zukunft</span> des Einkaufens
+		</p>
+	</div>
+	</li>
+	<li class="home-slide">
+	<div class="flex-caption transparent light-font center text-animation">
+		<p class="home-slide-content swing animated" data-wow-delay="2s" data-wow-duration="4s">
+			 <span class="highlight">Keine</span> Wartezeiten
+		</p>
+		<p class="home-slide-content fadeInUp animated" data-wow-delay="2s" data-wow-duration="4s">
+			an der <span class="highlight">Kasse</span>  
+		</p>
+	</div>
+	</li>
+	<li class="home-slide">
+	<div class="flex-caption transparent light-font center text-animation">
+		<p class="home-slide-content flipInY animated">
+			Mit der <span class="highlight">EASY</span> Shopper App
+		</p>
+		<p class="home-slide-content slideInLeft animated">
+			 wird Ihr <span class="highlight">Einkauf</span> zum Erlebnis
+		</p>
+	</div>
+	</li>
+</ul>
+</section>
+
+<!-- Vorteile
+================================================== -->
+<section id="vorteile">
+<div class="container">
+	<div class="starter-template">
+		<h1>Vorteile</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Mit dem EASY Shopper wird Ihr Einkauf zu einem Erlebnis.<br>
+			 Sehen Sie hier alle Vorteil auf einen Blick.
+		</p>
+		<div class="col-md-12">
+			<div class="boxservice wow flipInY animated" data-wow-delay="0.1s">
+				<i class="fa fa-clock-o"></i>
+				<h3>Zeit</h3>
+				<p>
+					 Kein langes Warten mehr an der Kasse. Produkte am Wagen scannen und an der EASY Kasse bezahlen.
+				</p>
+			</div>
+			<div class="boxservice wow flipInY animated" data-wow-delay="0.2s">
+				<i class="fa fa-shopping-bag"></i>
+				<h3>Umpacken</h3>
+				<p>
+					 Der Einzige Ort, an dem Sie Ihre Produkte umräumen müssen, ist Ihr Zuhause und nicht an der Kasse.
+				</p>
+			</div>
+			<div class="boxservice rightb wow flipInY animated" data-wow-delay="0.3s">
+				<i class="fa fa-compass"></i>
+				<h3>Navigation</h3>
+				<p>
+					 Lassen Sie sich von Ihrem EASY Shopper direkt zu den Produkten auf Ihrer Einkaufsliste navigieren.
+
+				</p>
+			</div>		
+			<div class="boxservice bottomb wow flipInY animated" data-wow-delay="0.4s">
+				<i class="fa fa-list-alt"></i>
+				<h3>Einkaufsliste</h3>
+				<p>
+					 Die am Handy erstellte Einkaufsliste wird bei Ihrem Einkauf übertragen. 
+
+				</p>
+			</div>
+			<div class="boxservice bottomb wow flipInY animated" data-wow-delay="0.5s">
+				<i class="fa fa-money"></i>
+				<h3>Angebote</h3>
+				<p>
+					 Genießen Sie exklusive Angebote nur für EASY Shopper Kunden.
+				</p>
+			</div>
+			<div class="boxservice rightb bottomb wow flipInY animated" data-wow-delay="0.6s">
+				<i class="fa fa-mobile"></i>
+				<h3>Smartphone</h3>
+				<p>
+					 Scannen Sie Ihre Produkte direkt mit Ihrem Handy ein. Funktioniert übrigens auch mit Ihrer Einkaufsliste.
+
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="maincolorbg">
+<div class="container">
+	<div class="starter-template">
+		<h1>F.A.Q.</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Sie haben Fragen bezüglich des EASY Shoppers?<br/>
+			 Wir haben die Anworten!	 
+		</p>
+	</div>
+
+
+    <div class="panel-group" id="accordion">
+        <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    <p class="lead faq">Brauche ich einen Abschluss in Informatik um den EASY Shopper benutzen zu können?</p></a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="faq-text">Nein <i class="fa fa-smile-o" aria-hidden="true"></i>. Die Benutzung ist kinderleicht. Sie nehmen das Produkt aus dem Regal, halten es vor den Scanner, warten auf den Signalton und legen es dann in den Wagen.</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    <p class="lead faq">Passt denn mein gesamter Wocheneinkauf in die 3 Taschen?</p></a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <p class="faq-text">Die drei Taschen haben ein Gesamtvolumen von 131 Liter. Ein herkömmlicher Einkaufswagen fasst ca. 131 Liter. Sollten Ihnen wirklich einmal der Platz ausgehen, wenden Sie sich an unsere Service Mitarbeiter.</p>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                    <p class="lead faq">Wie funktioniert die Bezahlung?</p></a>
+                </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                <p class="faq-text">Bezahlt wird nach wie vor an der (EASY) Kasse. An der Zahlungsart hat sich nichts verändert. Sie können auch weiterhin in Bar, mit Karte, mit der Edeka App oder mit der DeutschlandCard bezahlen.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                    <p class="lead faq">Was passiert, wenn ein Kunde nicht so ehrlich ist und nicht alle Produkte einscannt?</p></a>
+                </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+                <div class="panel-body">
+                <p class="faq-text">Auf dem EASY Shopper sind Waagen verbaut, die das Gesamtgewicht des EASY Shoppers überprüfen. Sollte es hier Abweichungen geben, wird ein Service Mitarbeiter informiert und gegenenfalls Ihren Einkauf überprüfen.</p>
+                </div>
+            </div>
+        </div>
+
+<!--         <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><h3>F: Werden durch den EASY Shopper Arbeitsplätze im Markt abgebaut?</h3></a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                    <p class="faq-text">A: Nein. </p>
+                </div>
+            </div>
+        </div> -->
+        <div class="panel panel-default wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                    <p class="lead faq">Benötige ich ein Smartphone?</p></a>
+                </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse">
+                <div class="panel-body">
+                <p class="faq-text">Um alle Vorteile des EASY Shopper nutzen zu können, empfehlen wir, die Installation der <a class="page-scroll" href="#app">EASY Shopper App</a>. Benutzen lässt sich der EASY Shopper jedoch auch ohne Ihr Handy, z.B. mit der DeutschlandCard.</p>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-</body>
+	<div class="starter-template lower-faq">
+		<p class="lead">
+			 Sie haben weitere Fragen?<br/>
+			 Wir freuen uns auf Ihre <a class="page-scroll" href="#contact-page">Nachricht</a>. 
+		</p>
+	</div>
 
+</div>
+</section>
+
+<!-- ABOUT
+================================================== -->
+<section id="app" class="graybg" style="border-top:0px;">
+<div class="container">
+	<div class="starter-template" style="padding-bottom:0px;">
+		<h1>Download</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Laden Sie sich die EASY Shopper App für Android oder iPhone.
+		</p>
+	</div>
+<!-- 	<p class="max80 wow bounceIn animated" data-wow-delay="0.1s">
+		 Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor quis lacinia faucibus, orci ipsum gravida tortor.
+	</p> -->
+	<div class="row">
+		<div class="col-sm-4 col-sm-offset-2">
+			<a class="" href="https://play.google.com/store/apps/details?id=com.pentlandfirth.whizcart" target="_blank" title="" alt="Google Play">
+			<img src="img/play.png" class="img-responsive pxauto wow bounceIn animatedUp store-image" data-wow-delay="0.2s">
+			<br/>	
+			</a>
+		</div>
+		<div class="col-sm-4 ">
+			 <a class="" href="https://itunes.apple.com/de/app/apple-store/id1152300615?mt=8" target="_blank" title="">
+			<img src="img/apple.jpg" class="img-responsive pxauto wow bounceIn animatedUp store-image" data-wow-delay="0.2s" alt="App Store">
+			<br/>	
+			</a>
+		</div>
+	</div>
+
+<!-- 	<img src="img/app.png" class="img-responsive pxauto wow bounceIn animatedUp app-image" style="margin-bottom:-60px;" data-wow-delay="0.2s" alt="EASY Shopper App"> -->
+<div class="row">
+    <div class="col-md-offset-2 col-md-8">
+        <div class="row">
+            <a href="img/app/liste.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="img/app/liste.png" class="img-responsive pxauto wow bounceIn animatedUp app-image">
+                <img src="img/app.png" class="img-responsive pxauto wow bounceIn animatedUp app-image-mobile" data-wow-delay="0.2s" alt="EASY Shopper App">
+            </a>
+            <a href="img/app/menu.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="img/app/menu.png" class="img-responsive pxauto wow bounceIn animatedUp app-image">
+            </a>
+            <a href="img/app/favorites.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+                <img src="img/app/favorites.png" class="img-responsive pxauto wow bounceIn animatedUp app-image">
+            </a>
+            <a href="img/app/suche.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            </a>
+            <a href="img/app/details.png" data-toggle="lightbox" data-gallery="example-gallery" class="col-sm-4">
+            </a>
+        </div>
+
+    </div>
+</div>
+
+	</br> 
+</div>
+</section> 
+<!-- Testen
+================================================== -->
+<section id="testen" class="graybg" style="border-top:0px;">
+<div class="container">
+	<div class="starter-template" style="padding-bottom:0px;">
+		<h1>Testen</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Besuchen Sie uns im E-Center in Porta-Westfalica.
+		</p>
+	</div>
+<!-- 	<p class="max80 wow bounceIn animated" data-wow-delay="0.1s">
+		 Lorem ipsum dolor sit amet, consectetur Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, sem quis lacinia faucibus, orci ipsum gravida tortor. Nulla varius consequat magna, id molestie ipsum volutpat quis. Suspendisse consectetur fringilla suctus. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor quis lacinia faucibus, orci ipsum gravida tortor.
+	</p> -->
+	<div class="row">
+		<div class="col-sm-6">
+	<img src="img/ecenter.jpg" class="img-responsive pxauto wow bounceIn animatedUp app-image" data-wow-delay="0.2s">
+		</div>
+		<div class="col-sm-6 ">
+	<div class="map-responsive wow bounceIn animated" data-wow-delay="0.1s">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9767.999546225163!2d8.8999604!3d52.2615471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22bef92ac6e055df!2sE-Center!5e0!3m2!1sde!2sde!4v1495383755909" style="border:0" allowfullscreen></iframe>
+	</div>
+<!-- 		</div>
+	</div>
+
+
+	</br> 
+	<div class="map-responsive wow bounceIn animated" data-wow-delay="0.1s">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9767.999546225163!2d8.8999604!3d52.2615471!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22bef92ac6e055df!2sE-Center!5e0!3m2!1sde!2sde!4v1495383755909" style="border:0" allowfullscreen></iframe>
+	</div> -->
+</div>
+</section> 
+
+
+<!-- Presse (TESTIMONIALS)
+================================================== -->
+<!-- <section class="testimonial graybg" id="presse">
+<div class="container">
+	<div class="starter-template">
+		<h1>Presse</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Was andere über uns schreiben
+		</p>
+	</div>
+	<div class="row">
+		<div class="c12">
+			<ul class="slides">
+				<li>
+				<div class="slide-text wow rollIn animated" data-wow-delay="0.1s" data-wow-duration="1s">
+					
+						<h2><span class="uppercase">FAZ</span></h2>
+						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar2.png" alt="">
+						<p>
+							 The support... I can only say it's awesome. You make a product and you help people out any way you can even if it means that you have to log in on their dashboard to sort out any problems that customer might have. Simply Outstanding!
+						</p>
+					
+				</div>
+				</li>
+				<li>
+				<div class="slide-text">
+					
+						<h2><span class="uppercase">TAZ</span></h2>
+						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar4.png" alt="">
+						<p>
+							 Great themes with equally amazing customer service to go with it. Very prompt responses and very knowledgable staff that truly cares about their customer. I stand 100% behind this website and will make sure to recommend it to my friends.
+						</p>
+					
+				</div>
+				</li>
+				<li>
+				<div class="slide-text">
+					
+						<h2><span class="uppercase">MT</span></h2>
+						<img src="http://wowthemes.net/demo/salique/salique-boxed/images/temp/avatar5.png" alt="">
+						<p>
+							 This is a great theme for Wordpress. Great features, catchy look. Also, I have on a few occasions needed to contact the support team, and they have been extremely helpful. I'm new to navigating these things so this has been invaluable!
+						</p>
+					
+				</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+</section>
+ -->
+
+<!-- CONTACT
+================================================== -->
+<section id="contact-page" class="maincolorbg">
+<div class="container">
+	<div class="starter-template">
+		<h1>Kontakt</h1>
+		<div class="smallsep">
+		</div>
+		<p class="lead">
+			 Unser Service Team beantworten gerne <br/>Ihre Fragen rund um den EASY Shopper.
+		</p>
+	</div>
+	<form id="contact" name="contact" method="post">
+		<fieldset>
+			<div class="row">
+				<div class="col-md-6 wow fadeIn animated animated" data-wow-delay="0.1s" data-wow-duration="2s">
+					<label for="name" id="name">Name<span class="required">*</span></label>
+					<input type="text" name="name" id="name" size="30" value="" required/>
+				</div>
+				<div class="col-md-6 wow fadeIn animated" data-wow-delay="0.3s" data-wow-duration="2s">
+					<label for="email" id="email">E-Mail<span class="required">*</span></label>
+					<input type="text" name="email" id="email" size="30" value="" required/>
+				</div>
+			<!-- 	<div class="col-md-4 wow fadeIn animated" data-wow-delay="0.5s" data-wow-duration="2s">
+					<label for="phone" id="phone">Telefon</label>
+					<input type="text" name="phone" id="phone" size="30" value=""/>
+				</div> -->
+			</div>
+			<div class="wow fadeIn animated" data-wow-delay="0.8s" data-wow-duration="1.5" style="margin-top:15px;">
+				<label for="Message" id="message">Nachricht<span class="required">*</span></label>
+				<textarea name="message" id="message" required></textarea>
+			</div>
+			<!-- <div class="g-recaptcha" data-sitekey="6Lcx1SIUAAAAAEG8FZBv3GrnwmpkRNQ0P5vK88XL"></div> -->
+
+			<div class="wow fadeIn animated" data-wow-delay="1s" data-wow-duration="2s">
+				<input id="submit" type="submit" name="submit" value="Absenden"/>
+			</div>
+		</fieldset>
+	</form>
+	<div id="success">
+		<span>		
+		<p style="margin-top:20px;">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			 Vielen Dank, Ihre Nachricht wurde versendet. Wir werden uns umgehend bei Ihnen melden.
+		</p>
+		</span>
+	</div>
+	<div id="error">
+		<span>
+		<p>
+			 Ups, da ist wohl etwas schief gelaufen. Bitte die Seite neuladen und noch einmal probieren.
+		</p>
+		</span>
+	</div>
+</div>
+</section>
+
+<!-- FOOTER
+================================================== -->
+<section id="footer" class="footer">
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<ul class="social-icons">
+				<li class="wow bounceIn animated" data-wow-delay="0.1s"><a href="https://www.facebook.com/whiz.cart" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<!-- <li class="wow bounceIn animated" data-wow-delay="0.2s"><a href="#."><i class="fa fa-twitter"></i></a></li> -->
+				<!-- <li class="wow bounceIn animated" data-wow-delay="0.3s"><a href="#."><i class="fa fa-google-plus"></i></a></li> -->
+				<li class="wow bounceIn animated" data-wow-delay="0.4s"><a href="https://youtu.be/qEYDKGhi8nA" target="_blank"><i class="fa fa-youtube"></i></a></li>
+				<!-- <li class="wow bounceIn animated" data-wow-delay="0.5s"><a href="#."><i class="fa fa-pinterest"></i></a></li> -->
+			</ul>
+			<p class="copyright">
+				 &copy; EASY Shopper 2017
+			</p>
+		</div>
+	</div>
+</div>
+</section>
+
+
+
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/nicescroll.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/flexslider.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/common.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.1.1/ekko-lightbox.min.js"></script>
+<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+<script type="text/javascript">
+	$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox();
+});
+</script>
+</body>
 </html>
