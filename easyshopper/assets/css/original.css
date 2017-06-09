@@ -1,3 +1,4 @@
+
 body {
 	padding-top:60px;
 	/*font-family:Open Sans;*/
@@ -330,7 +331,7 @@ ul.social-icons li a:hover {
 	text-shadow:1px 1px 0px white,2px 2px 0px #CCC;
 }
 .wrapshadow i {
-	text-shadow:2px 4px 3px rgba(0,0,0,0.3) !Important;
+	text-shadow:2px 4px 3px rgba(0,0,0,0.3);
 }
 .pricing .content {
 		padding:20px 0 20px 0;
